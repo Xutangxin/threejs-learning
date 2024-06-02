@@ -1,6 +1,16 @@
-import * as THREE from "three";
+// 搭建：
+// mkdir three-demo
+// cd three-demo
 
-console.log("data", THREE);
+// npm i --save three
+// npm i --save-dev vite
+
+// "scripts": {
+//   "dev": "vite",
+//   "build": "vite build"
+// }
+
+import * as THREE from "three";
 
 // 场景 scene
 const scene = new THREE.Scene();
