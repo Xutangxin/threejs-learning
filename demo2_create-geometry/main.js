@@ -43,12 +43,12 @@ const material = new THREE.MeshBasicMaterial({
 });
 
 // 物体
-const mesh = new THREE.Mesh(geometry, material);
+const cube = new THREE.Mesh(geometry, material);
 
 // 位置
-mesh.position.set(1, 1, 1);
+cube.position.set(1, 1, 1);
 
-scene.add(mesh);
+scene.add(cube);
 
 // 创建渲染器
 const canvas = document.querySelector("canvas.webgl");
@@ -59,8 +59,8 @@ renderer.render(scene, camera);
 // 动画
 function animate() {
   requestAnimationFrame(animate);
-  mesh.rotation.x += 0.01;
-  mesh.rotation.y += 0.01;
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
   renderer.render(scene, camera);
 }
 
